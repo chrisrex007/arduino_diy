@@ -1,6 +1,6 @@
 # Arduino_DIY
 
-## Project Title : Bluetooth Controll & Obstacle Avoiding Car
+## Project Title : Bluetooth Control & Obstacle Avoiding Car
 
 ### Components Used: 
 - Arduino UNOR3
