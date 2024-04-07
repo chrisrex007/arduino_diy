@@ -1,4 +1,5 @@
-//MakewithREX Bot controller android app
+//Make sure you have NewPing.h library in Arduino's Folder before use the code in your own machine.
+
 #include <NewPing.h>
 
 //sensor pins
@@ -6,8 +7,6 @@
 #define echo_pin A2 //analog input 2
 //in1 in2 in3 in4 4 5 6 7
 
-#define maximum_distance 200
-boolean goesForward = false;
 int distance = 100;
 
 NewPing sonar(trig_pin, echo_pin, maximum_distance); //sensor function
@@ -73,12 +72,9 @@ void setup()
   delay(100);
 }
 void loop()
-  { 
-  int distanceRight = 0;
-  int distanceLeft = 0;
-  delay(50);
+  {
 
-  if (distance <= 20){
+  if (distance <= 40){
     _mStop();
     getstr=Serial.read();
     if(getstr=='B'){
